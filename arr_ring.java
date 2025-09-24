@@ -46,4 +46,4 @@ public class arr_ring {
      sc.close(); 
     }
     } 
-//Strings are immutable
+
