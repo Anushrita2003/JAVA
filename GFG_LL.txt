@@ -1,0 +1,33 @@
+class Solution {
+
+    Node head, tail;
+
+    Node addAtTail(int val){
+        Node temp = new Node(val);
+        if(tail == null){
+            head = temp;
+            tail = temp;
+        } else {
+            tail.next = temp;
+            tail = temp;
+        }
+        return temp;
+    }
+
+    public Node findIntersection(Node head1, Node head2) {
+
+        // outer loop using for
+        for(Node temp1 = head1; temp1 != null; temp1 = temp1.next){
+              
+            // inner loop using for
+            for(Node temp2 = head2; temp2 != null; temp2 = temp2.next){
+
+                if(temp1.data == temp2.data){
+                    addAtTail(temp1.data);
+                    break;   // avoid duplicate insertions
+                }
+            }
+        }
+        return head;
+    }
+}
