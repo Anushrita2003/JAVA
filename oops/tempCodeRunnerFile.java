@@ -1,2 +1,1 @@
-Animal oj=new Animal();
-        oj.color="Brown";
+/ n.removeNthFromEnd(2);
