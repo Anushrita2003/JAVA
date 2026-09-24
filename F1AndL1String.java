@@ -20,7 +20,7 @@ public class F1AndL1String {
     // System.out.println("Enter the the letter whose 1st occurance and last occurance has to be searched");
     // String c=sc.next();
     int l=s.length();
-    count(s,l-1);
+    
     sc.close();
 }
 }
